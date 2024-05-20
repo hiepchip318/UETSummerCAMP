@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USC || Đăng ký</title>
+
+
+    <!-- link font awesome cdn trên trang web cdnjs.com -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="css/form.css">
+</head>
+
+<body>
+    <div class="form-container">
+        <form action="">
+            <h1>Đăng ký</h1>
+            <div class="input-box">
+                <input type="text" name="hoten" id="hoten" placeholder="fullname" required>
+                <i class="fas fa-user"></i>
+            </div>
+            <div class="input-box">
+                <input type="text" name="username" id="username" placeholder="username" required>
+                <i class="fas fa-user"></i>
+                <span id="username_error"></span>
+            </div>
+            <div class="input-box">
+                <input type="date" name="birthday" id="birthday" placeholder="date of birth" required>
+                <i class="fa-regular fa-calendar"></i>
+                <span id="date_error"></span>
+            </div>
+            <div class="input-box">
+                <input type="email" placeholder="email" required>
+                <i class="fa-regular fa-envelope"></i>
+            </div>
+            <div class="input-box">
+                <select name="experience_level">
+                  <option value="" disabled selected>-- Chọn cấp độ kinh nghiệm của bạn  --</option>
+                  <option value="newbie">Newbie</option>
+                  <option value="intern">Intern</option>
+                  <option value="fresher">Fresher</option>
+                  <option value="junior">Junior</option>
+                  <option value="middle">Middle</option>
+                  <option value="senior">Senior</option>
+                </select>
+              </div>
+            <div class="input-box">
+                <input type="password" name="password" id="password" placeholder="password" required>
+                <i class="fa-solid fa-lock"></i>
+            </div>
+            <div class="input-box">
+                <input type="password" name="repass" id="repass" placeholder="confirm password" required>
+                <i class="fa-solid fa-lock"></i>
+                <span id="repass_error"></span>
+            </div>
+    
+            <button type="submit" class="form-btn">Đăng ký ngay</button>
+
+    
+            <div class="register">
+                <p>Bạn đã có tài khoản?<a href="login.html">Đăng nhập</a></p>
+            </div>
+        </form>
+    </div>
+    
+    <script src="js/form.js"></script>
+</body>
